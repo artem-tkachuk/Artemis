@@ -27,11 +27,12 @@ class MicrosoftTranslator {
             body: JSON.stringify([{ Text: text }]),
             headers: {
                 'Content-Type': 'application/json',
-                'Ocp-Apim-Subscription-Key': process.env.TRANSLATOR_TEXT_SUBSCRIPTION_KEY
+                'Ocp-Apim-Subscription-Key': `${process.env.TRANSLATOR_TEXT_SUBSCRIPTION_KEY}`
             }
         });
 
         if (!res.ok) {
+            console.log(res.headers);
             throw new Error('Call to translation services failed.');
         }
 

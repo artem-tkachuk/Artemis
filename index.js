@@ -6,7 +6,7 @@
 // Import required packages
 const path = require('path');
 const request = require('request');
-const uuidv4 = require('uuid/v4')
+const uuidv4 = require('uuid/v4');
 const restify = require('restify');
 const { MicrosoftTranslator } = require('./translation/microsoftTranslator');
 const { TranslatorMiddleware } = require('./translation/translatorMiddleware');

@@ -20,10 +20,11 @@
         "botbuilder-ai": "~4.6.1",
         "botbuilder-dialogs": "~4.6.1",
         "dotenv": "^8.2.0",
+        "node-fetch": "latest",
+        "request": "^2.88.2",
         "requests": "^0.3.0",
         "restify": "~8.4.0",
-        "uuid4": "^1.1.4",
-      "node-fetch": "latest"
+        "uuid4": "^1.1.4"
     },
     "devDependencies": {
         "eslint": "^6.6.0",
